@@ -1,0 +1,13 @@
+release/caiji.o
+release/instruction.o
+release/main.o
+release/qcustomplot.o
+release/sampleforce.o
+release/testmax.o
+release/widget.o
+release/moc_caiji.o
+release/moc_instruction.o
+release/moc_qcustomplot.o
+release/moc_sampleforce.o
+release/moc_testmax.o
+release/moc_widget.o

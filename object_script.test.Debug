@@ -1,0 +1,13 @@
+debug/caiji.o
+debug/instruction.o
+debug/main.o
+debug/qcustomplot.o
+debug/sampleforce.o
+debug/testmax.o
+debug/widget.o
+debug/moc_caiji.o
+debug/moc_instruction.o
+debug/moc_qcustomplot.o
+debug/moc_sampleforce.o
+debug/moc_testmax.o
+debug/moc_widget.o

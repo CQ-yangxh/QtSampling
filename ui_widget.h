@@ -14,6 +14,7 @@
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
@@ -45,18 +46,20 @@ public:
     QLabel *label_5;
     QLabel *label_6;
     QLabel *label_7;
+    QPushButton *pathSelect;
+    QLineEdit *pathPrint;
 
     void setupUi(QWidget *Widget)
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName(QString::fromUtf8("Widget"));
-        Widget->resize(800, 600);
+        Widget->resize(840, 600);
         mplot = new QCustomPlot(Widget);
         mplot->setObjectName(QString::fromUtf8("mplot"));
         mplot->setGeometry(QRect(10, 70, 591, 451));
         groupBox_1 = new QGroupBox(Widget);
         groupBox_1->setObjectName(QString::fromUtf8("groupBox_1"));
-        groupBox_1->setGeometry(QRect(610, 60, 181, 221));
+        groupBox_1->setGeometry(QRect(630, 60, 181, 221));
         QFont font;
         font.setBold(true);
         groupBox_1->setFont(font);
@@ -104,20 +107,20 @@ public:
         label_4->setFont(font1);
         startButton = new QPushButton(Widget);
         startButton->setObjectName(QString::fromUtf8("startButton"));
-        startButton->setGeometry(QRect(690, 450, 91, 71));
+        startButton->setGeometry(QRect(680, 490, 131, 31));
         title = new QLabel(Widget);
         title->setObjectName(QString::fromUtf8("title"));
-        title->setGeometry(QRect(280, 20, 251, 31));
+        title->setGeometry(QRect(300, 20, 251, 31));
         QFont font3;
         font3.setPointSize(16);
         font3.setBold(true);
         title->setFont(font3);
         clearButton = new QPushButton(Widget);
         clearButton->setObjectName(QString::fromUtf8("clearButton"));
-        clearButton->setGeometry(QRect(610, 450, 71, 31));
+        clearButton->setGeometry(QRect(630, 490, 41, 31));
         groupBox_2 = new QGroupBox(Widget);
         groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
-        groupBox_2->setGeometry(QRect(610, 290, 181, 141));
+        groupBox_2->setGeometry(QRect(630, 290, 181, 141));
         gestureBox = new QComboBox(groupBox_2);
         gestureBox->addItem(QString());
         gestureBox->addItem(QString());
@@ -148,6 +151,13 @@ public:
         label_7->setObjectName(QString::fromUtf8("label_7"));
         label_7->setGeometry(QRect(10, 100, 69, 20));
         label_7->setFont(font);
+        pathSelect = new QPushButton(Widget);
+        pathSelect->setObjectName(QString::fromUtf8("pathSelect"));
+        pathSelect->setGeometry(QRect(630, 440, 41, 31));
+        pathPrint = new QLineEdit(Widget);
+        pathPrint->setObjectName(QString::fromUtf8("pathPrint"));
+        pathPrint->setGeometry(QRect(680, 440, 131, 31));
+        pathPrint->setReadOnly(true);
 
         retranslateUi(Widget);
 
@@ -181,6 +191,7 @@ public:
         label_5->setText(QCoreApplication::translate("Widget", "\345\212\233\346\260\264\345\271\263\357\274\232", nullptr));
         label_6->setText(QCoreApplication::translate("Widget", "\345\212\233\346\233\262\347\272\277\357\274\232", nullptr));
         label_7->setText(QCoreApplication::translate("Widget", "\345\212\250  \344\275\234\357\274\232", nullptr));
+        pathSelect->setText(QCoreApplication::translate("Widget", "\350\267\257\345\276\204", nullptr));
     } // retranslateUi
 
 };

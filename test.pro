@@ -9,21 +9,17 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    caiji.cpp \
-    instruction.cpp \
     main.cpp \
     qcustomplot.cpp \
-    sampleforce.cpp \
+    sampling.cpp \
     testmax.cpp \
     widget.cpp
 
 HEADERS += \
     USB3102A.h \
     USB3102ARSV.h \
-    caiji.h \
-    instruction.h \
     qcustomplot.h \
-    sampleforce.h \
+    sampling.h \
     testmax.h \
     widget.h
 
